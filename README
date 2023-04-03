@@ -1,0 +1,11 @@
+Project Introduction:
+The project is a demo to show the process of training a model by sklearn and inferencing a model by pyspark.
+
+
+File Introduction:
+[1]The file "lg_generate.py" trains a logistics regression model by sklearn and saves the trained model by generating a file named "lg_model.pkl".
+[2]The file "lg_pred_V2.py" loads the model trained by the first file and broadcasts it to all compute nodes in spark framework. So different nodes can predict the test dataset in the same time.
+
+Reference: 
+[1]https://blog.csdn.net/hejp_123/article/details/112653793
+[2]http://codelibrary.tech/scala/spark_ml_sklearn.html
